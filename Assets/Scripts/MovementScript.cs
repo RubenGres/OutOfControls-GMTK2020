@@ -10,9 +10,14 @@ public class MovementScript : MonoBehaviour
 
     public float speed;
     public float jumpForce;
+
     bool goesRight = false;
 
+    public GameObject ControlUI;
+
+
     ControlLimit limit;
+    controlUI UI_up, UI_left, UI_right;
 
     void Start()
     {
@@ -22,6 +27,12 @@ public class MovementScript : MonoBehaviour
         int level = Int16.Parse(SceneManager.GetActiveScene().name.Remove(0,5));
 
         limit = ControlLimit.getLevelLimit(level);
+        UI_up = ControlUI.transform.Find("UI_up").GetComponent<controlUI>();
+        UI_up.count = limit.up;
+        UI_left = ControlUI.transform.Find("UI_left").GetComponent<controlUI>();
+        UI_left.count = limit.left;
+        UI_right = ControlUI.transform.Find("UI_right").GetComponent<controlUI>();
+        UI_right.count = limit.right;
     }
 
     void Update()
@@ -32,6 +43,7 @@ public class MovementScript : MonoBehaviour
                 if (limit.up > 0)
                 {
                     limit.up--;
+                    UI_up.count--;
                     up();
                 }
 
@@ -40,6 +52,7 @@ public class MovementScript : MonoBehaviour
                 if (limit.left > 0)
                 {
                     limit.left--;
+                    UI_left.count--;
                     left();
                 }
 
@@ -48,6 +61,7 @@ public class MovementScript : MonoBehaviour
                 if (limit.right > 0)
                 {
                     limit.right--;
+                    UI_right.count--;
                     right();
                 }
 
