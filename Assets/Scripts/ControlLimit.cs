@@ -24,7 +24,7 @@ public class ControlLimit
             levelLimit = new Dictionary<int, ControlLimit>();
 
             //test level
-            addLevel(0, 1, 1, 1);
+            addLevel(0, 5, 5, 5);
 
             addLevel(1, 1, 0, 0);
             addLevel(2, 1, 0, 1);
