@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BonusControl : MonoBehaviour
+public class BonusKey : MonoBehaviour
 {
     public string value;
 

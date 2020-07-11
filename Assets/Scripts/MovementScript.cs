@@ -57,6 +57,11 @@ public class MovementScript : MonoBehaviour
             GameManager.reloadScene();
         }
 
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+
         //Debug.Log("up " + limit["up"] + ", left " + limit["left"] + ", right" + limit["right"]);
     }
 

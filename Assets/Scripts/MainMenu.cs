@@ -8,11 +8,18 @@ public class MainMenu : MonoBehaviour
 
     public void startGame()
     {
-        GameManager.nextLevel();
+        GameManager.loadLevel();
+    }
+
+    public void levelSelect()
+    {
+        SceneManager.LoadScene("LevelSelect");
     }
 
     public void exit()
     {
         Application.Quit();
     }
+
+
 }
