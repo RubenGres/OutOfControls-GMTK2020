@@ -90,7 +90,6 @@ public class MovementScript : MonoBehaviour
         if (hit.collider != null)
         {
             Debug.DrawLine(raycast, hit.point, Color.red);
-            Debug.Log(hit.distance);
             return hit.distance < 0.2;
         }
 
