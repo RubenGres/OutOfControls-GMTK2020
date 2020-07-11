@@ -65,7 +65,7 @@ public class MovementScript : MonoBehaviour
         //Debug.Log("up " + limit["up"] + ", left " + limit["left"] + ", right" + limit["right"]);
     }
 
-    void up()
+    public void up()
     {
         // jump if on ground
         rb.AddForce(Vector3.up * jumpForce);
@@ -113,4 +113,11 @@ public class MovementScript : MonoBehaviour
             right();
         }
     }
+
+    public void bump()
+    {
+        rb.velocity = new Vector2(rb.velocity.x, 0);
+        up();
+    }
+
 }
