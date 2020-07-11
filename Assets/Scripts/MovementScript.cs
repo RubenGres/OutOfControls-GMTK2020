@@ -13,11 +13,7 @@ public class MovementScript : MonoBehaviour
 
     bool goesRight = false;
 
-    public GameObject ControlUI;
-
-
     ControlLimit limit;
-    controlUI UI_up, UI_left, UI_right;
 
     void Start()
     {
@@ -27,12 +23,6 @@ public class MovementScript : MonoBehaviour
         int level = Int16.Parse(SceneManager.GetActiveScene().name.Remove(0,5));
 
         limit = ControlLimit.getLevelLimit(level);
-        UI_up = ControlUI.transform.Find("UI_up").GetComponent<controlUI>();
-        UI_up.count = limit.up;
-        UI_left = ControlUI.transform.Find("UI_left").GetComponent<controlUI>();
-        UI_left.count = limit.left;
-        UI_right = ControlUI.transform.Find("UI_right").GetComponent<controlUI>();
-        UI_right.count = limit.right;
     }
 
     void Update()
@@ -43,7 +33,6 @@ public class MovementScript : MonoBehaviour
                 if (limit.up > 0)
                 {
                     limit.up--;
-                    UI_up.count--;
                     up();
                 }
 
@@ -52,7 +41,6 @@ public class MovementScript : MonoBehaviour
                 if (limit.left > 0)
                 {
                     limit.left--;
-                    UI_left.count--;
                     left();
                 }
 
@@ -61,7 +49,6 @@ public class MovementScript : MonoBehaviour
                 if (limit.right > 0)
                 {
                     limit.right--;
-                    UI_right.count--;
                     right();
                 }
 
@@ -93,12 +80,13 @@ public class MovementScript : MonoBehaviour
 
     bool isGrounded()
     {
-        Vector3 raycast = transform.position - new Vector3(0, transform.lossyScale.y, 0);
+        Vector3 raycast = transform.position - new Vector3(0, transform.lossyScale.y/2 - 0.001f, 0);
         RaycastHit2D hit = Physics2D.Raycast(raycast, -Vector2.up, Mathf.Infinity);
         if (hit.collider != null)
         {
             Debug.DrawLine(raycast, hit.point, Color.red);
-            return hit.distance < 0.01;
+            Debug.Log(hit.distance);
+            return hit.distance < 0.2;
         }
 
         return false;
@@ -121,50 +109,3 @@ public class MovementScript : MonoBehaviour
         }
     }
 }
-
-/*
-    void leftRightMovement()
-    {
-        if (Input.GetKey("left"))
-        {
-            movement -= acceleration;
-        }
-        else if (Input.GetKey("right"))
-        {
-            movement += acceleration;
-        }
-        else
-        {
-            if (Mathf.Abs(movement) <= friction + 0.1)
-            {
-                movement = 0;
-            }
-            else
-            {
-                if (movement > 0)
-                {
-                    movement -= friction;
-                }
-                else
-                {
-                    movement += friction;
-                }
-            }
-        }
-
-        if (Mathf.Abs(movement) > maxSpeed)
-        {
-            if (movement > 0)
-            {
-                movement = maxSpeed;
-            }
-            else
-            {
-                movement = -maxSpeed;
-            }
-        }
-
-        
-    }
-
-    */

@@ -5,6 +5,7 @@ using UnityEngine;
 public class ControlLimit
 {
     private static Dictionary<int, ControlLimit> levelLimit = null;
+    public static ControlLimit currentControlLimit;
 
     public int up;
     public int left;
@@ -37,7 +38,8 @@ public class ControlLimit
         }
 
         ControlLimit levelLim = levelLimit[level];
-        return new ControlLimit(levelLim.up, levelLim.left, levelLim.right);
+        currentControlLimit = new ControlLimit(levelLim.up, levelLim.left, levelLim.right);
+        return currentControlLimit;
     }
 
     private static void addLevel(int level, int up, int left, int right)
