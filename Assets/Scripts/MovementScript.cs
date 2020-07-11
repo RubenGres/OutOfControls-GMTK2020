@@ -28,25 +28,25 @@ public class MovementScript : MonoBehaviour
 
         if (Input.GetKeyDown("up"))
             if (isGrounded())
-                if (limit["up"] > 0)
+                if (limit.up > 0)
                 {
-                    limit["up"]--;
+                    limit.up--;
                     up();
                 }
 
         if (Input.GetKeyDown("left"))
             if(isMoving())
-                if (limit["left"] > 0)
+                if (limit.left > 0)
                 {
-                    limit["left"]--;
+                    limit.left--;
                     left();
                 }
 
         if (Input.GetKeyDown("right"))
             if (isMoving())
-                if (limit["right"] > 0)
+                if (limit.right > 0)
                 {
-                    limit["right"]--;
+                    limit.right--;
                     right();
                 }
 
