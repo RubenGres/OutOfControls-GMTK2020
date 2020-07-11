@@ -15,7 +15,7 @@ public class ControlLimit : Dictionary<string, int>
             //test level
             addLevel(0, 99, 99, 99);
 
-            addLevel(1, 1, 0, 0);
+            addLevel(1, 0, 0, 1);
             addLevel(2, 1, 0, 1);
             addLevel(3, 1, 0, 1);
             addLevel(4, 2, 1, 1);
