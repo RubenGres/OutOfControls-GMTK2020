@@ -5,10 +5,12 @@ using UnityEngine;
 public class BonusKey : MonoBehaviour
 {
     public string value;
+    public AudioSource audio;
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        switch(value)
+        audio.Play();
+        switch (value)
         {
             case "up":
                 ControlLimit.currentControlLimit.up++;

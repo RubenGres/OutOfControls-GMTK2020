@@ -10,7 +10,7 @@ public class MovementScript : MonoBehaviour
 
     public float speed;
     public float jumpForce;
-
+    private bool goesRight = false;
 
     ControlLimit limit;
 
@@ -72,11 +72,13 @@ public class MovementScript : MonoBehaviour
 
     void left()
     {
+        goesRight = false;
         rb.velocity = new Vector2(-speed, rb.velocity.y);
     }
 
     void right()
     {
+        goesRight = true;
         rb.velocity = new Vector2(+speed, rb.velocity.y);
     }
 
@@ -106,7 +108,7 @@ public class MovementScript : MonoBehaviour
 
     public void bounce()
     {
-        if (rb.velocity.x > 0)
+        if (goesRight)
         {
             left();
         }
