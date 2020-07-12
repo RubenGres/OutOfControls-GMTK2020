@@ -85,12 +85,18 @@ public class MovementScript : MonoBehaviour
 
     bool isGrounded()
     {
-        Vector3 raycast = transform.position - new Vector3(0, transform.lossyScale.y/2 - 0.001f, 0);
-        RaycastHit2D hit = Physics2D.Raycast(raycast, -Vector2.up, Mathf.Infinity);
-        if (hit.collider != null)
+        Vector3 raycast = transform.position - new Vector3(transform.lossyScale.x / 2, transform.lossyScale.y/2 - 0.001f, 0);
+        RaycastHit2D hit1 = Physics2D.Raycast(raycast, -Vector2.up, Mathf.Infinity);
+
+        Vector3 raycast2 = transform.position - new Vector3(-transform.lossyScale.x / 2, transform.lossyScale.y / 2 - 0.001f, 0);
+        RaycastHit2D hit2 = Physics2D.Raycast(raycast2, -Vector2.up, Mathf.Infinity);
+
+
+        if (hit1.collider != null || hit2.collider)
         {
-            Debug.DrawLine(raycast, hit.point, Color.red);
-            return hit.distance < 0.2;
+            Debug.DrawLine(raycast, hit1.point, Color.red);
+            Debug.DrawLine(raycast2, hit2.point, Color.red);
+            return hit1.distance < 0.2 || hit2.distance < 0.2;
         }
 
         return false;

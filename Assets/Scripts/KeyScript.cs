@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class KeyScript : MonoBehaviour
 {
-    public GameObject door, key;
+    public GameObject door;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        key.SetActive(false);
-        door.SetActive(false);
+        this.transform.gameObject.SetActive(false);
+        door.GetComponent<DoorScript>().close();
     }
 }
