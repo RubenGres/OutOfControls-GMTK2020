@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4654894902449690447}
   - component: {fileID: 4654894902449690446}
   - component: {fileID: 4654894902449690441}
+  - component: {fileID: 5853445685481112707}
   m_Layer: 0
   m_Name: BonusKeyLeft
   m_TagString: Untagged
@@ -122,3 +123,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: left
+--- !u!114 &5853445685481112707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4654894902449690445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fec81a2096cb9542ad246948b574354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  amplitute: 0.1
