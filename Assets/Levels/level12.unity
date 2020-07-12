@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: c9451985fbcb9484dbb27e4abe520d14,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -202,6 +203,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RubberWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505158613633936897, guid: 1e2e12f84432be640844b7d3a7346478,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e2e12f84432be640844b7d3a7346478, type: 3}
@@ -1268,7 +1274,7 @@ PrefabInstance:
     - target: {fileID: 8774680766769971644, guid: 85fd1ad56bb022b4ca8f3e0b6b0b5517,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.31
+      value: -3.52
       objectReference: {fileID: 0}
     - target: {fileID: 8774680766769971644, guid: 85fd1ad56bb022b4ca8f3e0b6b0b5517,
         type: 3}

@@ -21,6 +21,8 @@ public class RubberWallScript : MonoBehaviour
         ms.bounce();
         mat.SetColor("_EmissionColor", new Color(0.2f, 0.2f, 0.2f));
 
+        transform.Find("Lights").gameObject.SetActive(true);
+
         StartCoroutine(resetColor());
     }
 
@@ -29,6 +31,7 @@ public class RubberWallScript : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
 
         mat.color = baseColor;
+        transform.Find("Lights").gameObject.SetActive(false);
         mat.SetColor("_EmissionColor", Color.black);
     }
 }
