@@ -70,12 +70,12 @@ public class MovementScript : MonoBehaviour
         rb.AddForce(Vector3.up * jumpForce);
     }
 
-    void left()
+    public void left()
     {
         rb.velocity = new Vector2(-speed, rb.velocity.y);
     }
 
-    void right()
+    public void right()
     {
         rb.velocity = new Vector2(+speed, rb.velocity.y);
     }
