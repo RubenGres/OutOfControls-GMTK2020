@@ -800,12 +800,12 @@ PrefabInstance:
     - target: {fileID: 4322420574986437287, guid: 707bd03cbd242cd448e6d8ae9d20924f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.43
+      value: 2.78
       objectReference: {fileID: 0}
     - target: {fileID: 4322420574986437287, guid: 707bd03cbd242cd448e6d8ae9d20924f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.82
+      value: -3.831
       objectReference: {fileID: 0}
     - target: {fileID: 4322420574986437287, guid: 707bd03cbd242cd448e6d8ae9d20924f,
         type: 3}
@@ -857,6 +857,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bumper
       objectReference: {fileID: 0}
+    - target: {fileID: 8127147961097679294, guid: 707bd03cbd242cd448e6d8ae9d20924f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 99e41dcf38916f4488d5a024a168b41c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 707bd03cbd242cd448e6d8ae9d20924f, type: 3}
 --- !u!1 &1607932648
