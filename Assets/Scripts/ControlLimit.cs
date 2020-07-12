@@ -41,7 +41,7 @@ public class ControlLimit
             addLevel(12, 3, 0, 1);
             addLevel(13, 4, 0, 1);
             addLevel(14, 5, 1, 1);
-            addLevel(15, 7, 2, 0);
+            addLevel(15, 8, 2, 0);
             addLevel(16, 8, 1, 1);
         }
 
