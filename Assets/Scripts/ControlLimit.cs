@@ -43,6 +43,7 @@ public class ControlLimit
             addLevel(14, 5, 1, 1);
             addLevel(15, 8, 2, 0);
             addLevel(16, 8, 1, 1);
+            addLevel(17, 3, 1, 1);
         }
 
         ControlLimit levelLim = levelLimit[level];
