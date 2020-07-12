@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObjectiveScript : MonoBehaviour
 {
     public Animator animator;
-    public float transitionDelayTime = 0.5f;
+    public float transitionDelayTime = 1.0f;
 
 
     void OnTriggerEnter2D(Collider2D other)
