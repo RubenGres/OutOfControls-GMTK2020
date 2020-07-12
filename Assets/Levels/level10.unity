@@ -1456,7 +1456,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 396590065}
-  key: {fileID: 1907152312}
 --- !u!1001 &1986738318
 PrefabInstance:
   m_ObjectHideFlags: 0
