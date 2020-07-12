@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
 
     public static int level = 1;
-    public static int nLevel = 21;
+    public static int nLevel = 18;
 
     public static Dictionary<int, bool> unlockedLevels = null;
     public static Dictionary<int, bool> completedLevels = null;
