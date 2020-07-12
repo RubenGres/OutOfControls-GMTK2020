@@ -120,3 +120,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 8774680766769971638, guid: 85fd1ad56bb022b4ca8f3e0b6b0b5517, type: 3}
+  brighter: {r: 0.6494749, g: 0.990566, b: 0.6818198, a: 0}
