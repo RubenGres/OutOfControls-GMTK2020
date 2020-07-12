@@ -107,13 +107,16 @@ public class GameManager : MonoBehaviour
         completedLevels[level] = true;
         level++;
         unlockedLevels[level] = true;
-        SceneManager.LoadScene("level" + level);
 
+        SceneManager.LoadScene("level" + level);
         saveProgress();
     }
 
+
+
     internal static void loadLevel()
     {
+
         SceneManager.LoadScene("level" + level);
     }
 
