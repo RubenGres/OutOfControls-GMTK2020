@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
+  m_AmbientSkyColor: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -221,8 +221,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 807989}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.273145, y: -2.3642983, z: 31.005358}
-  m_LocalScale: {x: 0.48418677, y: 1.0756068, z: 1}
+  m_LocalPosition: {x: 7.273145, y: -2.2126, z: 31.005358}
+  m_LocalScale: {x: 0.48418677, y: 0.7722655, z: 1}
   m_Children: []
   m_Father: {fileID: 1963034791}
   m_RootOrder: 0
@@ -411,12 +411,12 @@ PrefabInstance:
     - target: {fileID: 4322420574986437287, guid: 707bd03cbd242cd448e6d8ae9d20924f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.8678062
+      value: 1.92
       objectReference: {fileID: 0}
     - target: {fileID: 4322420574986437287, guid: 707bd03cbd242cd448e6d8ae9d20924f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.7824798
+      value: -3.831
       objectReference: {fileID: 0}
     - target: {fileID: 4322420574986437287, guid: 707bd03cbd242cd448e6d8ae9d20924f,
         type: 3}
@@ -645,8 +645,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595508825}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.47, y: 0.356, z: 31.005358}
-  m_LocalScale: {x: 0.43267256, y: 6.4367123, z: 1}
+  m_LocalPosition: {x: -1.47, y: 0.439, z: 31.005358}
+  m_LocalScale: {x: 0.43267256, y: 6.2737603, z: 1}
   m_Children: []
   m_Father: {fileID: 1963034791}
   m_RootOrder: 2
@@ -1673,8 +1673,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1723838551}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.89, y: -1.26, z: 31.005358}
-  m_LocalScale: {x: 3.0972276, y: 0.4873615, z: 1}
+  m_LocalPosition: {x: -6.8632, y: -1.26, z: 31.005358}
+  m_LocalScale: {x: 3.0436456, y: 0.4873615, z: 1}
   m_Children: []
   m_Father: {fileID: 1963034791}
   m_RootOrder: 3
