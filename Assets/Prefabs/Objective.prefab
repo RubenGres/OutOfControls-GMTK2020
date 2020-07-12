@@ -5001,6 +5001,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3902ed007ce95db419dfebb82d3df4a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  transitionDelayTime: 1
+  audio: {fileID: 7277035498496491307, guid: 2fbc80e665f86ef45aaa7313a9f91aec, type: 3}
 --- !u!61 &9050063833464358270
 BoxCollider2D:
   m_ObjectHideFlags: 0
