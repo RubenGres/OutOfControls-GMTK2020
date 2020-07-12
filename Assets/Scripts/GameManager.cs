@@ -108,7 +108,14 @@ public class GameManager : MonoBehaviour
         level++;
         unlockedLevels[level] = true;
 
-        SceneManager.LoadScene("level" + level);
+        if (level == 17)
+        {
+            SceneManager.LoadScene("EndScene");
+        }
+        else
+        {
+            SceneManager.LoadScene("level" + level);
+        }
         saveProgress();
     }
 
