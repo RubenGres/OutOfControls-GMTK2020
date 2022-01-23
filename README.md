@@ -2,9 +2,8 @@
   
   
 <p align="center">
-  <img src="outofcontrols.png">
-</p>
-  
+  <img src="outofcontrols.png" height="390">
+</p>  
   
 Out Of Control(s) is a game made with Unity for the [2020 GMTK Game Jam](http://itch.io/jam/gmtk-2020) in the span of 48 hours.  
 The theme for this years' Jam was "Out Of Control". We chose to interpret the theme a bit differently and made a game where you have a limited number of ket presses before
