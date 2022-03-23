@@ -14,4 +14,4 @@ This game was made by theses lovely folks :
 * [@mdeloffre](https://github.com/mdeloffre) (music/code)
 * [@rubengres](https://github.com/rubengres) (code)  
 
-You can play the game [here](https://ohmlet.itch.io/gmtk-2020)
+You can play the game [here](https://ohmlet.itch.io/out-of-controls)
